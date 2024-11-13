@@ -1,0 +1,13 @@
+# Camera
+ro.vendor.camera.platform_name=HRY
+
+# Bluetooth
+bluetooth.device.default_name=Huawei 
+
+# ro.boot.product.hardware.sku=HRY-LX1
+# ro.build.id=HUAWEIHRY-L21
+
+ro.dual.sim.phone=true
+ro.hwcamera.ai_resolution=3264x2448
+ro.product.hardwareversion=HL3HRYM
+persist.sys.dualcards=true

@@ -1,0 +1,35 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+DEVICE_PATH := device/huawei/harry
+
+# Inherit from kirin710-common
+include device/huawei/kirin710-9-common/BoardConfigCommon.mk
+
+# Inherit the proprietary files
+include vendor/huawei/harry/BoardConfigVendor.mk
+
+# Display
+TARGET_SCREEN_DENSITY := 415
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# SKUs
+ODM_MANIFEST_SKUS += HRY-L01 HRY-L21
+ODM_MANIFEST_HRY-L01_FILES := $(DEVICE_PATH)/manifest_monosimnfc.xml
+ODM_MANIFEST_HRY-L21_FILES := $(DEVICE_PATH)/manifest_dualsimnfc.xml
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824        # mmcblk0p43 (24576*1024)
+BOARD_CACHEIMAGE_PARTITION_SIZE := 109051904      # mmcblk0p60 (106496*1024)
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432    # mmcblk0p45 (32768*1024)
+BOARD_RECVENDORIMAGE_PARTITION_SIZE := 16777216   # mmcblk0p46 (16384*1024)
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 56069455872 # mmcblk0p70 (54755328*1024)
+BOARD_ODMIMAGE_PARTITION_SIZE := 100663296      # mmcblk0p64 (98304*1024)
+BOARD_VENDORIMAGE_PARTITION_SIZE := 503316480   # mmcblk0p63 ( 491520*1024)
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1577058304  # mmcblk0p66 (1540096*1024)
+# BOARD_PRODUCTIMAGE_PARTITION_SIZE := 1048576000 # mmcblk0p67 (1024000*1024)
