@@ -1,5 +1,5 @@
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/kirin710-9-common/proprietary)..
-Extracting 560 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
+Extracting 562 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
   - vendor/bin/hw/android.hardware.drm@1.1-service.widevine
   - vendor/lib/libwvhidl.so
     + Fixed up vendor/lib/libwvhidl.so
@@ -9,12 +9,14 @@ Extracting 560 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - system/bin/tee_auth_daemon
   - system/etc/native_packages.bin
   - system/lib/libc_secshared.so
+  - system/lib/libstagefright.huawei.so
   - system/lib/libteec_client.so
   - system/lib/libteeclientjni.so
   - system/lib/libtuidaemon.so
   - system/lib/vendor.huawei.hardware.libteec@1.0.so
   - system/lib/vendor.huawei.hardware.libteec@2.0.so
   - system/lib64/libc_secshared.so
+  - system/lib64/libstagefright.huawei.so
   - system/lib64/libteec_client.so
   - system/lib64/libteeclientjni.so
   - system/lib64/libtuidaemon.so
@@ -67,6 +69,8 @@ Extracting 560 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/bin/goodix_3288_ta.sec
   - vendor/bin/goodix_5296_ta.sec
   - vendor/bin/gpsdaemon
+  - vendor/bin/hostapd_hisi
+    + Fixed up vendor/bin/hostapd_hisi
   - vendor/bin/hw/android.hardware.secure_element@1.0-service.hisi
   - vendor/bin/hw/rild
   - vendor/bin/hw/vendor.huawei.hardware.biometrics.fingerprint@2.1-service
@@ -88,6 +92,8 @@ Extracting 560 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/bin/syna_155A_ta.sec
   - vendor/bin/teecd
   - vendor/bin/tlogcat
+  - vendor/bin/wpa_cli_hisi
+  - vendor/bin/wpa_supplicant_hisi
   - vendor/etc/DroidSansFallbackTui.ttf
   - vendor/etc/bluetooth/bt_vendor.conf
   - vendor/etc/camera/bshutter/default/algo.xml
@@ -282,6 +288,13 @@ Extracting 560 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/hwcam/hwcam.services.so
   - vendor/lib/libCLCropAndScale.so
   - vendor/lib/libFaceBeautyMeiwo.so
+  - vendor/lib/libOMX.hisi.media.common.so
+  - vendor/lib/libOMX.hisi.vdec.core.so
+  - vendor/lib/libOMX.hisi.video.decoder.secure.so
+  - vendor/lib/libOMX.hisi.video.decoder.so
+    + Fixed up vendor/lib/libOMX.hisi.video.decoder.so
+  - vendor/lib/libOMX.hisi.video.encoder.so
+  - vendor/lib/libOMX_Core.so
   - vendor/lib/libOpenCL.so
   - vendor/lib/libOpenCLFoundation.so
   - vendor/lib/lib_device_interface.so
@@ -333,16 +346,8 @@ Extracting 560 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/libteec.so
   - vendor/lib/libteec_eid.so
   - vendor/lib/libteec_vendor.so
-  - vendor/lib/soundfx/libaudiopreprocessing.so
-  - vendor/lib/soundfx/libbundlewrapper.so
-  - vendor/lib/soundfx/libdownmix.so
-  - vendor/lib/soundfx/libdynproc.so
-  - vendor/lib/soundfx/libeffectproxy.so
   - vendor/lib/soundfx/libhuaweiprocessing.so
-  - vendor/lib/soundfx/libldnhncr.so
   - vendor/lib/soundfx/liboffloadvisualizer.so
-  - vendor/lib/soundfx/libreverbwrapper.so
-  - vendor/lib/soundfx/libvisualizer.so
   - vendor/lib/vendor.huawei.hardware.ai@1.0.so
   - vendor/lib/vendor.huawei.hardware.ai@1.1.so
   - vendor/lib/vendor.huawei.hardware.ai@1.2.so
@@ -430,6 +435,7 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/libOMX.hisi.vdec.core.so
   - vendor/lib64/libOMX.hisi.video.decoder.secure.so
   - vendor/lib64/libOMX.hisi.video.decoder.so
+    + Fixed up vendor/lib64/libOMX.hisi.video.decoder.so
   - vendor/lib64/libOMX.hisi.video.encoder.so
   - vendor/lib64/libOMX_Core.so
   - vendor/lib64/libOpenCL.so
@@ -498,6 +504,7 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/libhorizondetect.so
   - vendor/lib64/libhuaweiaudioeffectutil.so
   - vendor/lib64/libhuaweicust.so
+  - vendor/lib64/libhwwifi-hal.so
   - vendor/lib64/libiawareperf_client.so
   - vendor/lib64/libiawareperf_server.so
   - vendor/lib64/libiawareperfpolicy_server.so
@@ -536,16 +543,10 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/libthpinterface.so
   - vendor/lib64/libthplog.so
   - vendor/lib64/libtsa.so
-  - vendor/lib64/soundfx/libaudiopreprocessing.so
-  - vendor/lib64/soundfx/libbundlewrapper.so
-  - vendor/lib64/soundfx/libdownmix.so
-  - vendor/lib64/soundfx/libdynproc.so
-  - vendor/lib64/soundfx/libeffectproxy.so
+  - vendor/lib64/libwifi_ext.default.so
+  - vendor/lib64/libwifi_wapi_hisi.so
   - vendor/lib64/soundfx/libhuaweiprocessing.so
-  - vendor/lib64/soundfx/libldnhncr.so
   - vendor/lib64/soundfx/liboffloadvisualizer.so
-  - vendor/lib64/soundfx/libreverbwrapper.so
-  - vendor/lib64/soundfx/libvisualizer.so
   - vendor/lib64/vendor.huawei.hardware.ai@1.0.so
   - vendor/lib64/vendor.huawei.hardware.ai@1.1.so
   - vendor/lib64/vendor.huawei.hardware.ai@1.2.so
@@ -587,6 +588,10 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/vendor.huawei.hardware.rtt@1.0.so
   - vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
   - vendor/lib64/vendor.huawei.hardware.tp@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.wifi.supplicant@2.0.so
+  - vendor/lib64/vendor.huawei.hardware.wifi.supplicant@2.1.so
+  - vendor/lib64/vendor.huawei.hardware.wifi@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.wifi@1.1.so
   - vendor/phone.prop
   - vendor/lib/libril.so
   - vendor/lib64/hw/audio.primary.kirin710.so
