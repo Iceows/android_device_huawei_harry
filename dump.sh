@@ -30,6 +30,9 @@ echo "Start extraction"
 sleep 5
 sudo ./extract-files.sh hry ./dump/ > dump.log
 
+echo "Reset owner"
+sudo chown -R $(id -u):$(id -g) ./../../../vendor/huawei/*
+
 echo "Umount all"
 sleep 5
 
